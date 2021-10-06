@@ -1,4 +1,5 @@
 const resultText = document.querySelector('.game-result__text');
+const compText = document.querySelector('.comp-result__text');
 
 export function didUserWin(player, computer) {
 
@@ -18,4 +19,8 @@ export function didUserWin(player, computer) {
 
 export function updateResultText(value) {
     resultText.textContent = value;
+}
+
+export function updateCompResultText(value) {
+    compText.textContent = value;
 }

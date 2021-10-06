@@ -1,6 +1,5 @@
 import { getRandomThrow } from './get-random-throw.js';
-import { didUserWin } from './utils.js';
-import { updateResultText } from './utils.js';
+import { didUserWin, updateResultText, updateCompResultText } from './utils.js';
 
 const submitButton = document.querySelector('.submit');
 const winCount = document.querySelector('.win-count');
@@ -18,9 +17,11 @@ submitButton.addEventListener('click', () => {
         updateResultText('Draw');
     } else if (result === 'win') {
         updateResultText('You Win!');
+        updateCompResultText(`The computer chose ${computerThrow}.`);
         wins++;
     } else if (result === 'lose') {
         updateResultText('You Lose!');
+        updateCompResultText(`The computer chose ${computerThrow}.`);
         losses++;
     }
 
