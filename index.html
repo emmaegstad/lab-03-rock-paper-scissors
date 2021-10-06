@@ -13,12 +13,26 @@
 </head>
 
 <body>
-    <h1 class="title">Rock, Paper, Scissors</h1> 
+    <header>
+        <h1 class="title">Rock, Paper, Scissors</h1> 
+        <p class="rules">You know the drill. Rock beats scissors, scissors beat paper, paper beats rock. Choose well.</p>
+    </header>
 
     <section class="main">
-        <img src="./assets/rock.png" alt="A blue cartoon hand making a fist to indicate rock." class="rock">
-        <img src="./assets/paper.png" alt="A blue cartoon hand laid flat to indicate paper." class="paper">
-        <img src="./assets/scissors.png" alt="A blue cartoon hand making a peace sign to indicate scissors." class="scissors">
+        <label class="rock">
+            <input type="radio" name="rps" class="rock" value="rock">
+            <img src="./assets/rock.png" alt="A blue cartoon hand making a fist to indicate rock." class="rock">
+        </label>
+
+        <label class="paper">
+            <input type="radio" name="rps" class="paper" value="paper">
+            <img src="./assets/paper.png" alt="A blue cartoon hand laid flat to indicate paper." class="paper">
+        </label>
+
+        <label class="scissors">
+            <input type="radio" name="rps" class="scissors" value="scissors">
+            <img src="./assets/scissors.png" alt="A blue cartoon hand making a peace sign to indicate scissors." class="scissors">
+        </label>
     
         <button class="submit">SHOOT</button>
 
