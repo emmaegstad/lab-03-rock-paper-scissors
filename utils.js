@@ -1,3 +1,5 @@
+const resultText = document.querySelector('.game-result__text');
+
 export function didUserWin(player, computer) {
 
     if (player === computer) {
@@ -12,4 +14,8 @@ export function didUserWin(player, computer) {
         return 'lose';
     }
 
+}
+
+export function updateResultText(value) {
+    resultText.textContent = value;
 }
