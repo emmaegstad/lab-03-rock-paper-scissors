@@ -13,22 +13,22 @@ header {
 .title {
     color: #452CD6;
     font-family: 'Bungee', cursive;
-    font-size: 6.5vh;
+    font-size: 6vh;
     text-align: center;
     margin-top: 0;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .rules {
     color: #452CD6;
-    font-size: 2vh;
+    font-size: 1.5vh;
     text-align: center;
-    margin-bottom: 5vh;
+    margin-bottom: 30px;
 }
 
 .main {
     display: grid;
-    grid-gap: 25px;
+    grid-gap: 15px;
     align-items: center; 
     margin: 50px 200px 0 200px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -46,7 +46,6 @@ input[type=radio]:checked + img {
 img {
     width: auto;
     height: 20vh;
-    /* border: 1px solid black; */
 }
 
 .rock {
@@ -93,6 +92,7 @@ button {
     grid-row: 2/3;
     height: 20vh;
     width: 20vh;
+    padding: 10px;
     border-top: 6px solid #FF31D7;
     border-right: 6px solid #FF31D7;
     border-bottom: 6px solid #452CD6;
